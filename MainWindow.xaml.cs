@@ -24,5 +24,23 @@ namespace WpfAppPetT
         {
             InitializeComponent();
         }
+
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            // Показать второе окно
+            AuthWindow window = new AuthWindow();
+            window.Show();
+        }
+
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            // Показать второе окно
+            RegWindow window = new RegWindow();
+            window.Show();
+        }
     }
 }

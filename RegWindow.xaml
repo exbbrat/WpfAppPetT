@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfAppPetT.RegWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPetT"
+        mc:Ignorable="d"
+        Title="RegWindow" Height="350" Width="300">
+    <Grid>
+        <TextBox x:Name="CreateLoginBox" HorizontalAlignment="Left" Margin="96,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="RegButton" Content="Register" HorizontalAlignment="Left" Margin="132,248,0,0" VerticalAlignment="Top" Click="RegButton_Click"/>
+        <Label Content="Create the password" HorizontalAlignment="Left" Margin="96,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Create the login name" HorizontalAlignment="Left" Margin="92,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Confirm the password" HorizontalAlignment="Left" Margin="92,174,0,0" VerticalAlignment="Top"/>
+        <Label Content="Your confirmation code is: 0101" HorizontalAlignment="Left" Margin="70,149,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label Content="Please complete the registration process in 30 min." HorizontalAlignment="Center" Margin="0,169,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <PasswordBox x:Name="ConfirmPasswordBox" HorizontalAlignment="Left" Margin="94,205,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="CreatePasswordBox" HorizontalAlignment="Left" Margin="96,144,0,0" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
