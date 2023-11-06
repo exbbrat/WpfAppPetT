@@ -31,14 +31,18 @@ namespace WpfAppPetT
             bool isCorrect = login == "admin" && password == "12345";
             if (isCorrect)
             {
-                //// Скрыть текущее окно
-                //this.Hide();
-
-                //// Показать второе окно
-                //AuthWindow window = new AuthWindow();
-                //window.Show();
-
                 MessageBox.Show("Ви успішно зайшли у систему!");
+
+                // Скрыть текущее окно
+                this.Hide();
+
+                // Показать второе окно
+                SettingsWindow window = new SettingsWindow();
+
+                /// 4 butt. 
+                /// 3 menuitem 
+                /// textbox( only number) 
+                window.Show();
             }
             else
             {
