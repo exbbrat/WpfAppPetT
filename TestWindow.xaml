@@ -8,10 +8,10 @@
         Title="TestWindow" Height="450" Width="800">
     <Grid>
         <Label Content="Дані" HorizontalAlignment="Left" Height="24" Margin="36,39,0,0" VerticalAlignment="Top" Width="123"/>
-        <Button Content="Export" HorizontalAlignment="Left" Margin="36,226,0,0" VerticalAlignment="Top" Height="27" Width="94"/> <!--Export data to text file1 Fe_1.txt-->
-        <Button Content="Import" HorizontalAlignment="Left" Margin="177,226,0,0" VerticalAlignment="Top" Width="111" Height="27"/><!--Import data to text file Fi_2.txt-->
+        <Button x:Name="ExportDataButton" Content="Export" HorizontalAlignment="Left" Margin="36,226,0,0" VerticalAlignment="Top" Height="27" Width="94" Click="ExportDataButton_Click"/> <!--Export data to text file1 Fe_1.txt-->
+        <Button x:Name="ImportDataButton" Content="Import" HorizontalAlignment="Left" Margin="177,226,0,0" VerticalAlignment="Top" Width="111" Height="27" Click="ImportDataButton_Click"/><!--Import data to text file Fi_2.txt-->
        
-        <ListView HorizontalAlignment="Left" Height="133" Margin="36,68,0,0" VerticalAlignment="Top" Width="151" d:ItemsSource="{d:SampleData ItemCount=5}">
+        <ListView x:Name="ListViewRight" HorizontalAlignment="Left" Height="133" Margin="36,68,0,0" VerticalAlignment="Top" Width="151" d:ItemsSource="{d:SampleData ItemCount=5}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

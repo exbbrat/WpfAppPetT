@@ -15,7 +15,7 @@ using System.Text.RegularExpressions;
 namespace WpfAppPetT
 {
     /// <summary>
-    /// Interaction logic for SettingsWindow.xaml
+    /// СДЕЛАТЬ ИМПОРТ ДАННЫХ ИЗ ЛИСТВЬЮ 1 ВО 2 В РАЗНЫХ ОКНАХ
     /// </summary>
     public partial class SettingsWindow : Window
     {
@@ -30,7 +30,7 @@ namespace WpfAppPetT
             e.Handled = regex.IsMatch(e.Text);
         }
 
-        private void ApplyButton_Click(object sender, RoutedEventArgs e)
+        public void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
             bool showMessage = false; // Переменная для определения, нужно ли выводить MessageBox
 
@@ -81,9 +81,9 @@ namespace WpfAppPetT
                     // Пользователь нажал "OK", выполните необходимые действия
                     this.Hide();
 
-                    // Показать второе окно
-                    TestWindow window = new TestWindow();
+                    TestWindow window = new TestWindow(ListViewLeft.Items.OfType<string>().ToList());
                     window.Show();
+
                 }
                 else
                 {
@@ -96,6 +96,8 @@ namespace WpfAppPetT
         {
             ListViewLeft.Items.Clear();
         }
+
+
 
         //private void ApplyButtonMiddle_Click(object sender, RoutedEventArgs e)
         //{
