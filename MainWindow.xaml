@@ -32,7 +32,7 @@
                 </LinearGradientBrush>
             </Button.BorderBrush>
         </Button>
-        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="245,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="Already have an account?" HorizontalAlignment="Left" Margin="26,204,0,0" VerticalAlignment="Top" FontFamily="AniMe Matrix - MB_EN" Width="166" Foreground="#FFAAA3C8" FontSize="8"/>
         <!--Authorization login - Email. pasword 
     Registration 
     - Login 

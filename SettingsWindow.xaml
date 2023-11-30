@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="SettingsWindow" Height="450" Width="800">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="414" Stroke="Black" VerticalAlignment="Center" Width="780" Fill="Gray"/>
+        <Rectangle HorizontalAlignment="Center" Height="414" Stroke="Black" VerticalAlignment="Center" Width="780" Fill="#FFAAA3C8"/>
 
         <ComboBox x:Name="ComboBoxLeft" HorizontalAlignment="Left" Margin="48,26,0,0" VerticalAlignment="Top" Width="174" Height="32">
             <ComboBoxItem x:Name="Item1Left" Content="2"/>
@@ -16,7 +16,7 @@
         </ComboBox>
 
 
-        <Button x:Name="ApplyButton" Content="Apply" HorizontalAlignment="Left" Margin="289,239,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="ApplyButton_Click"/>
+        <Button x:Name="ApplyButton" Content="Apply" HorizontalAlignment="Left" Margin="289,239,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="ApplyButton_Click" FontFamily="AniMe Matrix - MB_EN" FontSize="11" BorderBrush="{x:Null}" Background="#FF8168EF"/>
         <!--<Button x:Name="ApplyButtonRight" Content="Apply" HorizontalAlignment="Left" Margin="574,195,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="ApplyButtonRight_Click"/>
         <Button x:Name="ApplyButtonMiddle" Content="Apply" HorizontalAlignment="Left" Margin="311,195,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="ApplyButtonMiddle_Click"/>-->
 
@@ -32,7 +32,7 @@
             <ComboBoxItem x:Name="Item3Middle" Content="c"/>
         </ComboBox>
         <TextBox x:Name="SetTextbox" HorizontalAlignment="Left" Margin="561,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="204" Height="30" PreviewTextInput="NumberValidationTextBox"/>
-        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="427,239,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="CancelButton_Click"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="427,239,0,0" VerticalAlignment="Top" Height="34" Width="66" Click="CancelButton_Click" FontFamily="AniMe Matrix - MB_EN" FontSize="11" BorderBrush="#FF3F28A2" Background="{x:Null}"/>
         <!--<Button x:Name="CancelButtonMiddle" Content="Cancel" HorizontalAlignment="Left" Margin="419,195,0,0" VerticalAlignment="Top" Height="34" Width="66"/>
         <Button x:Name="CancelButtonRight1" Content="Cancel" HorizontalAlignment="Left" Margin="682,195,0,0" VerticalAlignment="Top" Height="34" Width="66"/>-->
         <Label Content="------------------------------------------------------------------" HorizontalAlignment="Left" Margin="100,157,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
@@ -62,6 +62,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Label Content="Кількість гравців" HorizontalAlignment="Left" Margin="83,10,0,0" VerticalAlignment="Top" Height="20" FontSize="8" Width="104" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Тип гри" HorizontalAlignment="Left" Margin="346,10,0,0" VerticalAlignment="Top" Height="20" FontSize="8" Width="104" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Рівень складності" HorizontalAlignment="Left" Margin="611,10,0,0" VerticalAlignment="Top" Height="20" FontSize="8" Width="104" HorizontalContentAlignment="Center" FontWeight="Bold"/>
 
     </Grid>
 </Window>
