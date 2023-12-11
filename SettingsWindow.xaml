@@ -65,6 +65,26 @@
         <Label Content="Кількість гравців" HorizontalAlignment="Left" Margin="83,10,0,0" VerticalAlignment="Top" Height="20" FontSize="8" Width="104" HorizontalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Тип гри" HorizontalAlignment="Left" Margin="346,10,0,0" VerticalAlignment="Top" Height="20" FontSize="8" Width="104" HorizontalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Рівень складності" HorizontalAlignment="Left" Margin="611,10,0,0" VerticalAlignment="Top" Height="20" FontSize="8" Width="104" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name="BackButtonSettingsWindow" Content="←" HorizontalAlignment="Left" Height="21" Margin="674,391,0,0" VerticalAlignment="Top" Width="50" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="13" Click="BackButtonSettingsWindow_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF6849EA" Offset="1"/>
+                    <GradientStop Color="#FF06040F" Offset="0.067"/>
+                    <GradientStop Color="#FF8578D0" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="ExitButtonSettingsWindow" Content="X" HorizontalAlignment="Left" Height="21" Margin="748,391,0,0" VerticalAlignment="Top" Width="22" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Click="ExitButtonSettingsWindow_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF6849EA" Offset="1"/>
+                    <GradientStop Color="#FF06040F" Offset="0.067"/>
+                    <GradientStop Color="#FF8578D0" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
 
     </Grid>
 </Window>

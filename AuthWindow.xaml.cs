@@ -49,5 +49,12 @@ namespace WpfAppPetT
                 MessageBox.Show("Вы вказали невірні дані для входу.");
             }
         }
+
+        private void ExitButtonAuthWindow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MainWindow window = new MainWindow();
+            window.Show();
+        }
     }
 }

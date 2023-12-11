@@ -196,5 +196,19 @@ namespace WpfAppPetT
 
             isTimerRunning = false; // Сброс флага запущенности таймера 
         }
+
+        private void ExitButtonTestWindow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MainWindow window = new MainWindow();
+            window.Show();
+        }
+
+        private void BackButtonTestWindow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            SettingsWindow window = new SettingsWindow();
+            window.Show();
+        }
     }
 }

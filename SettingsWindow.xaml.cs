@@ -109,6 +109,20 @@ namespace WpfAppPetT
             ListViewLeft.Items.Clear();
         }
 
+        private void ExitButtonSettingsWindow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MainWindow window = new MainWindow();
+            window.Show();
+        }
+
+        private void BackButtonSettingsWindow_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Show();
+        }
+
         //private void ComboBoxLeft_SelectionChanged(object sender, SelectionChangedEventArgs e)
         //{
         //    //this.Hide();

@@ -63,6 +63,26 @@
         </ListView>
         <Button x:Name="StartTimerButton" Content="Start timer" HorizontalAlignment="Left" Margin="510,162,0,0" VerticalAlignment="Top" Height="29" Width="94" Click="StartTimerButton_Click"/>
         <Button x:Name="ResetTimerButton" Content="Reset timer" HorizontalAlignment="Left" Margin="651,162,0,0" VerticalAlignment="Top" Height="29" Width="94" Click="ResetTimerButton_Click"/>
+        <Button x:Name="BackButtonTestWindow" Content="←" HorizontalAlignment="Left" Height="21" Margin="674,391,0,0" VerticalAlignment="Top" Width="50" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="13" Click="BackButtonTestWindow_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF6849EA" Offset="1"/>
+                    <GradientStop Color="#FF06040F" Offset="0.067"/>
+                    <GradientStop Color="#FF8578D0" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="ExitButtonTestWindow" Content="X" HorizontalAlignment="Left" Height="21" Margin="748,391,0,0" VerticalAlignment="Top" Width="22" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Click="ExitButtonTestWindow_Click">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF6849EA" Offset="1"/>
+                    <GradientStop Color="#FF06040F" Offset="0.067"/>
+                    <GradientStop Color="#FF8578D0" Offset="0"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
         <!--таймер на 3  хв зворотній відлік-->
         <!--Дані з попереднього вікна згруповані в стовпчик.
         Кнопка експорту їх експорту у текстовий файл
